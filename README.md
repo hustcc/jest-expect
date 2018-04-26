@@ -1,6 +1,6 @@
 # jest-expect
 
->
+> Make jest expect more convenient.
 
 [![Build Status](https://travis-ci.org/hustcc/jest-expect.svg?branch=master)](https://travis-ci.org/hustcc/jest-expect)
 [![Coverage Status](https://coveralls.io/repos/github/hustcc/jest-expect/badge.svg?branch=master)](https://coveralls.io/github/hustcc/jest-expect)
