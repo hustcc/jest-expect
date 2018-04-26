@@ -1,0 +1,48 @@
+{
+  "name": "jest-expect",
+  "version": "0.0.1",
+  "description": "Make jest expect more convenient.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-dir lib",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hustcc/jest-expect.git"
+  },
+  "keywords": [
+    "jest",
+    "expect",
+    "assertion",
+    "jest-extended"
+  ],
+  "author": "hustcc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hustcc/jest-expect/issues"
+  },
+  "homepage": "https://github.com/hustcc/jest-expect#readme",
+
+  "dependencies": {
+    "fixed-round": "^1.0.0",
+    "jest-extended": "^0.7.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^22.0.4",
+    "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
+    "jest": "^22.4.2"
+  },
+  "jest": {
+    "testRegex": "/__tests__/.*.js$",
+    "collectCoverage": true,
+    "setupFiles": [],
+    "setupTestFrameworkScriptFile": "./src/index.js",
+    "collectCoverageFrom": [
+      "src/**/*.{js}"
+    ]
+  }
+}
