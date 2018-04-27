@@ -27,7 +27,7 @@
 
   "dependencies": {
     "fixed-round": "^1.0.0",
-    "jest-extended": "^0.7.1"
+    "jest-extended": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
