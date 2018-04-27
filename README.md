@@ -22,7 +22,7 @@ npm i --save-dev jest-expect
 
 Add jest-extended to your Jest setupTestFrameworkScriptFile configuration. [See for help](http://facebook.github.io/jest/docs/en/configuration.html#setuptestframeworkscriptfile-string)
 
-```json
+```js
 {
   "jest": {
     "setupTestFrameworkScriptFile": "jest-expect"
@@ -55,11 +55,11 @@ test('toBeApproximate', () => {
   expect(Math.PI).toBeApproximate(3);
   expect(Math.PI).toBeApproximate(3.14);
   expect(Math.PI).toBeApproximate(3.1416);
-
+  
   expect(Math.PI).not.toBeApproximate(4);
   expect(Math.PI).not.toBeApproximate(3.15);
   expect(Math.PI).not.toBeApproximate(3.1415);
- });
+});
 ```
 
 
