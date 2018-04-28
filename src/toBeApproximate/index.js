@@ -38,14 +38,8 @@ const digit = value => {
 
 export const toBeApproximate = (number, value) => {
   const pass = round(number, digit(value)) === value;
-  if (pass) {
-    return {
-      pass,
-      message: passMessage(number, value)
-    };
-  }
   return {
     pass,
-    message: failMessage(number, value)
+    message: pass ? passMessage(number, value) : failMessage(number, value)
   };
 };
