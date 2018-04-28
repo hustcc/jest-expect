@@ -15,7 +15,7 @@ describe('toBeApproximate', () => {
   });
 
   test('fail', () => {
-    expect(() => expect(Math.PI).toBeApproximate(3.1415)).toThrowErrorMatchingSnapshot();
-    expect(() => expect(Math.PI).not.toBeApproximate(3.14)).toThrowErrorMatchingSnapshot();
+    expect(() => expect(Math.PI).toBeApproximate(3.1415)).toThrow();
+    expect(() => expect(Math.PI).not.toBeApproximate(3.14)).toThrow();
   });
 });
